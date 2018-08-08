@@ -1,0 +1,11 @@
+<h1> Edit Existing User </h1>
+<%= form_for @user do |f| %>
+    
+    Username:  <%= f.text_field :username, placeholder: "Any name you'd like" %>
+    <br>
+    Email: <%= f.email_field :email, placeholder: "example@email.com" %>
+    <br>
+    Password: <%= f.password_field :password %>
+    <br>
+    <%= f.submit "Update" %>
+<% end %>
